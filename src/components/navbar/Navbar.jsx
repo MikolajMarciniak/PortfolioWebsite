@@ -1,5 +1,5 @@
 import "./navbar.scss";
 
 export default function Navbar() {
-  return <div></div>;
+  return <div className="navbar">Navbar</div>;
 }
