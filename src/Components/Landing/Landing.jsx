@@ -1,5 +1,5 @@
-import React from "react";
+import "./landing.scss";
 
 export default function Landing() {
-  return <div></div>;
+  return <div className="landing">landing</div>;
 }

@@ -1,5 +1,5 @@
-import React from "react";
+import "./about.scss";
 
 export default function About() {
-  return <div></div>;
+  return <div className="about">about</div>;
 }

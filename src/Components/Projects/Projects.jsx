@@ -1,5 +1,5 @@
-import React from "react";
+import "./projects.scss";
 
 export default function Projects() {
-  return <div></div>;
+  return <div className="projects">projects</div>;
 }
