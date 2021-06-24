@@ -2,7 +2,14 @@ import "./navbar.scss";
 import React from "react";
 
 function Navbar() {
-  return <div className="navbar">Nav</div>;
+  return (
+    <div className="navbar">
+      <div className="wrapper">
+        <div className="left"></div>
+        <div className="right"></div>
+      </div>
+    </div>
+  );
 }
 
 export default Navbar;
