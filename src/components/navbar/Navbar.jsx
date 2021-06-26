@@ -7,6 +7,9 @@ function Navbar() {
       <div className="wrapper">
         <div className="left">
           <a href="landing">asdf</a>
+          <a href="landing">asdf</a>
+          <a href="landing">asdf</a>
+          <a href="landing">asdf</a>
         </div>
         <div className="right"></div>
       </div>

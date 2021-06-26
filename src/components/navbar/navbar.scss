@@ -3,8 +3,19 @@
 .navbar {
   width: 100%;
   background-color: $navyblue;
-  height: 70px;
+  height: $navbarHeight;
   position: fixed;
   top: 0;
   z-index: 2;
+}
+
+.wrapper * {
+  color: white;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: $navbarHeight;
 }
