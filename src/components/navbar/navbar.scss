@@ -9,13 +9,29 @@
   z-index: 2;
 }
 
-.wrapper * {
-  color: white;
-  font-size: 20px;
-}
-
 .wrapper {
   display: flex;
   align-items: center;
   height: $navbarHeight;
+
+  .left {
+    width: 100%;
+    display: inherit;
+    border: 1px solid white;
+    justify-content: left;
+  }
+
+  .right {
+    display: inherit;
+    border: 1px solid white;
+    justify-content: center;
+  }
+}
+
+.wrapper * {
+  color: white;
+  font-size: 40px;
+  a {
+    padding: 0px 30px 0px 30px;
+  }
 }
