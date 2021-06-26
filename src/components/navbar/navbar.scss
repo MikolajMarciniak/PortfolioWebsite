@@ -1,6 +1,8 @@
+@import "../../global.scss";
+
 .navbar {
   width: 100%;
-  background-color: darkblue;
+  background-color: $navyblue;
   height: 70px;
   position: fixed;
   top: 0;
