@@ -1,12 +1,14 @@
 import "./navbar.scss";
 import React from "react";
-
+import placeholder from "../../resources/placeholder.png";
 function Navbar() {
   return (
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <a href="#landing">icon placeholder</a>
+          <a href="#landing">
+            <img src={placeholder} alt="placeholder" />
+          </a>
         </div>
         <div className="right">
           <a href="#about">about</a>
