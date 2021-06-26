@@ -5,12 +5,15 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 70px);
-    position: relative;
-    top: 70px;
+    height: 100%;
     scroll-snap-type: y proximity;
+
     scroll-behavior: smooth;
     scrollbar-width: none;
+    position: relative;
+    top: 70px;
+    height: calc(100vh - 70px);
+
     &::-webkit-scrollbar {
       display: none;
     }
