@@ -1,12 +1,13 @@
 import "./navbar.scss";
 import React from "react";
-
 function Navbar() {
   return (
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <a href="#landing">icon placeholder</a>
+          <a className="logo" href="#landing">
+            placeholder
+          </a>
         </div>
         <div className="right">
           <a href="#about">about</a>
