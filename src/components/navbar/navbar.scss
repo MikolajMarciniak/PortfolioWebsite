@@ -10,15 +10,14 @@
 }
 
 .wrapper {
+  padding: 10px 30px;
   display: flex;
   align-items: center;
-  height: $navbarHeight;
+  justify-content: space-between;
 
   .left {
-    width: 100%;
-    height: 100%;
-    display: inherit;
-    justify-content: left;
+    display: flex;
+    align-items: center;
 
     .logo {
       font-size: 40px;
