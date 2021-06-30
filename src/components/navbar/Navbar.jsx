@@ -1,9 +1,9 @@
 import "./navbar.scss";
 import React from "react";
 
-function Navbar() {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="navbar active">
+    <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a className="logo" href="#landing">
@@ -14,7 +14,7 @@ function Navbar() {
           <a href="#about">about</a>
           <a href="#projects">projects</a>
           <a href="#contact">contact</a>
-          <div className="hamburger">
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
@@ -24,5 +24,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
