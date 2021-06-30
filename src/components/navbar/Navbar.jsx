@@ -11,9 +11,13 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           </a>
         </div>
         <div className="right">
-          <a href="#about">about</a>
-          <a href="#projects">projects</a>
-          <a href="#contact">contact</a>
+          {menuOpen && (
+            <div className="menu">
+              <a href="#about">about me</a>
+              <a href="#projects">projects</a>
+              <a href="#contact">contact me</a>
+            </div>
+          )}
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
