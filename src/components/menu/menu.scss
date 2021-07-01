@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+.ham-menu {
+  width: 100vw;
+  height: 200px;
+  background-color: $navyblue;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

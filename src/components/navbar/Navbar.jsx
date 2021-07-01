@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import React from "react";
+
 export default function Navbar({ menuOpen, setMenuOpen, isMobile }) {
   return (
     <div className={"navbar " + (menuOpen && "active")}>
@@ -10,13 +11,6 @@ export default function Navbar({ menuOpen, setMenuOpen, isMobile }) {
           </a>
         </div>
         <div className="right">
-          {isMobile && menuOpen && (
-            <div className="menu">
-              <a href="#about">about me</a>
-              <a href="#projects">projects</a>
-              <a href="#contact">contact me</a>
-            </div>
-          )}
           {!isMobile && (
             <div className="menu">
               <a href="#about">about me</a>
@@ -24,6 +18,7 @@ export default function Navbar({ menuOpen, setMenuOpen, isMobile }) {
               <a href="#contact">contact me</a>
             </div>
           )}
+
           {isMobile && (
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
               <span className="line1"></span>

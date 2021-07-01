@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import "./app.scss";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import Menu from "./components/menu/menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
         setMenuOpen={setMenuOpen}
         isMobile={isMobile}
       />
+      {isMobile && menuOpen && <Menu></Menu>}
       <div className="sections">
         <Landing />
         <About />
