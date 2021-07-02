@@ -2,13 +2,32 @@
 
 .ham-menu {
   width: 100vw;
-  height: 200px;
   background-color: $navyblue;
+  color: $eggshell;
   position: fixed;
   z-index: 1;
-  top: 0px;
+  top: $navbarHeight;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform: translateY(-170px);
+  transition: all 1s ease;
+
+  a {
+    font-size: 24px;
+    width: 120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: inherit;
+  }
+  a:hover {
+    font-weight: 700;
+  }
+  &.active {
+    color: black;
+    background-color: $eggshell;
+    transform: translateY(0px);
+  }
 }
