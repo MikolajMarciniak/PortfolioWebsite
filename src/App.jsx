@@ -18,7 +18,7 @@ function App() {
         setMenuOpen={setMenuOpen}
         isMobile={isMobile}
       />
-      {isMobile && menuOpen && <Menu></Menu>}
+      {isMobile && <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>}
       <div className="sections">
         <Landing />
         <About />
