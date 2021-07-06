@@ -11,11 +11,10 @@
   transition: all 1s ease;
 
   .wrapper {
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: inherit;
 
     .left {
       display: flex;
@@ -24,6 +23,7 @@
       .logo {
         font-size: 40px;
         font-weight: 900;
+        color: inherit;
       }
     }
 
@@ -32,28 +32,16 @@
       align-items: center;
 
       .menu {
-        display: flex;
-        justify-content: right;
-        // display: grid;
-        // grid-auto-columns: 1fr;
-        // grid-auto-flow: column;
-        // justify-items: center;
-
-        // opacity: 0;
-        a {
-          width: 120px;
-
-          display: flex;
-          justify-content: center;
-        }
-        a:hover {
-          font-weight: 700;
-        }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        justify-items: center;
+        opacity: 0;
       }
 
       .hamburger {
         width: 32px;
-        height: 24px;
+        height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -71,9 +59,9 @@
   }
 
   .wrapper * {
-    font-size: 24px;
+    font-size: 30px;
     a {
-      padding: 0px 10px 0px 10px;
+      padding: 0px 30px 0px 30px;
       text-decoration: none;
       color: inherit;
     }
@@ -86,6 +74,10 @@
     .right {
       .menu {
         opacity: 1;
+
+        a:hover {
+          font-weight: 700;
+        }
       }
     }
 
