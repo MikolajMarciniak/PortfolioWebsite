@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.ham-menu {
+  width: 100vw;
+  background-color: $navyblue;
+  color: $eggshell;
+  position: fixed;
+  z-index: 1;
+  top: $navbarHeight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-250px);
+  transition: all 1s ease;
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    a {
+      font-size: 25px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      color: inherit;
+      margin: 0px 0 20px 0px;
+    }
+
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 10px;
+    }
+
+    a:hover {
+      font-weight: 700;
+    }
+  }
+
+  &.active {
+    color: black;
+    background-color: $eggshell;
+    transform: translateY(0px);
+  }
+}
