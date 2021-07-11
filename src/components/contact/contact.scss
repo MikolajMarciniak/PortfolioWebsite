@@ -3,3 +3,15 @@
 .contact {
   background-color: $coral;
 }
+
+.inputs {
+  margin: 20px 0px 20px 0px;
+  #email-input {
+    height: 30px;
+  }
+  > * {
+    font-size: 20px;
+    width: 100%;
+    resize: none;
+  }
+}

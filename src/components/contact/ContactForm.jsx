@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = ({}) => {
   return (
-    <div>
+    <div className="contact-form">
       <h2>Do you have a question?</h2>
       <p>Leave me a message. I will happily answer all questions.</p>
       <form className="contact-form">
@@ -11,6 +11,7 @@ const ContactForm = ({}) => {
             type="text"
             name="email"
             id="email-input"
+            className="textarea"
             placeholder="Email address"
           />
           <div className="invalid-feedback"></div>
@@ -21,7 +22,7 @@ const ContactForm = ({}) => {
             name="desc"
             autoComplete="off"
             id="description-input"
-            rows="3"
+            rows="4"
             placeholder="Your message"
           />
           <div className="invalid-feedback"></div>
